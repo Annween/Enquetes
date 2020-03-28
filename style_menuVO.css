@@ -1,0 +1,496 @@
+/* 
+
+
+DOCUMENT CSS 
+
+ESPACE ENQUETE OPCALIA 
+
+SOMMAIRE:
+
+1.LOGO 
+2.EN-TETE
+3.MENU
+3.1 MAIN 
+3.2 HAMBURGER
+4.CONTENU PRINCIPAL
+4.1 CONTENU ENCADRE
+5.PIED DE PAGE
+6.MEDIA QUERIES
+
+
+
+*/
+
+
+
+body 
+
+/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";  On importe une jolie police pour un rendu plus esthétique 	*/
+/* devanagari */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 300;
+							  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+							  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+							}
+							/* latin-ext */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 300;
+							  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+							  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+							}
+							/* latin */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 300;
+							  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+							  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+							}
+							/* devanagari */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 400;
+							  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+							  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+							}
+							/* latin-ext */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 400;
+							  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+							  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+							}
+							/* latin */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 400;
+							  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+							  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+							}
+							/* devanagari */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 500;
+							  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+							  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+							}
+							/* latin-ext */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 500;
+							  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+							  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+							}
+							/* latin */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 500;
+							  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+							  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+							}
+							/* devanagari */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 600;
+							  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+							  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+							}
+							/* latin-ext */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 600;
+							  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+							  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+							}
+							/* latin */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 600;
+							  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+							  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+							}
+							/* devanagari */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 700;
+							  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+							  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+							}
+							/* latin-ext */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 700;
+							  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+							  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+							}
+							/* latin */
+							@font-face {
+							  font-family: 'Poppins';
+							  font-style: normal;
+							  font-weight: 700;
+							  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+							  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+							}
+
+{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+/* ---------------------------------------------------
+                      1. LOGO
+----------------------------------------------------- */
+
+
+
+/* LOGO 
+#logo 
+{
+	width:30%;
+}
+
+#logo td
+{
+	width:25%; text-align:left;
+}
+*/
+
+
+/* ---------------------------------------------------
+                      2. EN-TETE
+----------------------------------------------------- */
+
+#cadre
+{
+	background-color:#E4EFFF; 
+	width: 100%; 
+	padding:5px; /* remplissage*/ 
+	margin: auto; /* marge automatique en fonction de la taille de la fenêtre */ 
+	text-align: center; /* aligne le texte */ 
+  font-family: Poppins, sans-serif;
+}
+
+
+
+/* ---------------------------------------------------
+                       3. MENU
+----------------------------------------------------- */
+
+.vertical-menu 
+{
+  width: 200px; /* largeur du menu */ 
+  overflow-x: hidden;/* désactive le scroll horizontal */ 
+  overflow-y: auto;  /* scroll vertical */  
+  margin-top: -2.5em; /* pour bien encrer le menu à gauche de notre page */ 
+  float: left; /* indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. */ 
+  height: 100%; /* Couvre 100% du haut de la page */ 
+  position: fixed; /* on fixe la position du menu pour ne pas qu'il bouge lorsque l'on scroll */ 
+  z-index: 1; /* établit un ordre pour chaque blocs afin d'éviter qu'ils se chevauchent */
+  top: 0;
+  width: 0; /* pour ne pas déclencher l'ouverture du menu quand on ouvre ou rafraîchit la page */ 
+  left: 0;
+  transition: 0.5s; /* temps d'apparition */ 
+  padding-top: 60px; /* remplissage jusqu'en haut du menu */ 
+}
+
+.vertical-menu a 
+{
+  background-color: #E4EFFF; /* couleur bleu clair de base (sans transition) */
+  color: black; /* couleur du texte initiale  */
+  display: block; /* Place les items les uns à la suite des autres */
+  padding: 12px; 
+  text-decoration: none; /* Retire le soulignage des items */
+}
+
+.vertical-menu a:hover /* transition de la couleur au passage du pointeur de la souris */
+{
+  background-color: #B0E0E6; /* bleu ---> bleu foncé */
+  color: white; /* couleur de la police au passage de la souris : noir ---> blanc */ 
+  text-decoration: none; /* retire le soulignage du texte */ 
+}
+
+.vertical-menu a.active /* cette partie agit essentiellement sur l'en-tête du menu */
+{
+  background-color: #B0E0E6; /* ajoute une couleur permanente à l'en-tête */
+  color: white; /* transition de la couleur de la police:  noir ----> blanc */
+  text-decoration: none;
+}
+
+.vertical-menu a
+{
+	padding: 8px 8px 8px 32px;
+	font-size: 25px; /* on redéfini la taille de la police */ 
+	display: block; /* permet de créer des blocs */ 
+	text-decoration: none;
+}
+
+.vertical-menu.closebtn /* bouton croix pour fermer le menu */ 
+{
+  position: absolute;
+  top: 0; /* position du bouton en rapport avec le haut de la page */ 
+  right: 25px;
+  font-size: 36px; /* taille de la croix */
+  margin-left: 50px; /* on place la croix 50 pixel à gauche */ 
+  background-color: #318CE7; /* Couleur de la case qui contient la croix*/ 
+  transition: 0.4s; 
+
+}
+
+#btn_div
+
+{
+  position: absolute;
+  top: 50px; /* position du bouton en rapport avec le haut de la page */ 
+  right: 100px;
+  font-size: 36px; /* taille de la croix */
+ /* on place la croix 50 pixel à gauche */ 
+  background-color: #000000; /* Couleur de la case qui contient la croix*/ 
+  transition: 0.4s; 
+  padding: 12px 16px;
+}
+
+/* ---------------------------------------------------
+                  3.1 MAIN 
+----------------------------------------------------- */
+
+
+#main /* action sur le contenu de la page*/ 
+{ 
+  transition: margin-left .5s; /* temps de latence */ 
+  padding: 20px;
+
+}
+
+
+
+/* ---------------------------------------------------
+                  3.2 HAMBURGER 
+----------------------------------------------------- */
+
+.container 
+{
+  display: inline-block; /* permet d'afficher des lignes */ 
+  cursor: pointer;
+  z-index: -1;  
+}
+
+.container a /* Partie qui affiche "Mes enquêtes" à droite du hamburger  */ 
+{
+	text-decoration: none;
+	position: absolute;
+	top: 105px;
+	left: 90px;
+	color: black; /* couleur de la police */ 
+	font-family: Poppins, sans-serif; /* Police */ 
+}
+
+.container a:hover
+{
+  text-decoration: none;
+
+}
+
+
+.bar1, .bar2, .bar3  /* barres du menu */ 
+{ 
+  width: 35px; /* largeur des lignes */ 
+  height: 5px; /* hauteur (épaisseur) des lignes */ 
+  background-color: #333; /* noir*/ 
+  margin: 6px 0; /* 6 pixels en haut et 0 pixel à gauche */
+  background-color: #B0E0E6;    
+}
+ 
+
+/* ---------------------------------------------------
+                  4. CONTENU PRINCIPAL
+----------------------------------------------------- */
+
+
+#titre_btt /* "Créer une enquête" */
+{
+  position: absolute; 
+  font-family: Poppins, sans-serif;
+  color: black;
+  top:210px;
+  left:90px; 
+}
+
+.plus /* bouton plus */ 
+{
+  margin-top:55px;
+  left: 10px;
+}
+
+
+#titre_enquete /* champ de texte pour le titre de l'enquête */ 
+{
+  position: absolute;
+  border-right: none; 
+  border-left:none; 
+  border-top:none; 
+  background-color: #E4EFFF;
+  left: 5px;
+  top: 50px;
+}
+
+input::placeholder /* Enquête sans titre */ 
+{
+  font-size: 1.5em;
+  font-family: sans-serif; /* police du placeholder */ 
+}
+
+#retour 
+{
+  margin: 0 auto; 
+  width: 100px;
+}
+
+#retour2
+{
+  margin-top:10px;
+}
+
+/* ---------------------------------------------------
+                  4.1 CONTENU ENCADRE
+----------------------------------------------------- */
+
+#div_enquete /* encadré */ 
+{
+  position: relative;
+  top: 80px;
+  box-sizing: border-box;
+  padding: 150px 300px;
+  background-color: #E4EFFF;  
+  border-radius: 10px 10px 10px 10px;
+  overflow-x: hidden;
+  border-bottom: thick double #B0E0E6;
+  border-left: thick double #B0E0E6;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  float: none;
+ 
+}
+
+
+#btt_enquete /* bouton Valider */ 
+{
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  padding:6px 0 6px 0;
+  font:bold 13px Arial; /* bold : caractère en gras */ 
+  background:#f5f5f5; /* couleur de la boite */ 
+  color:#555;
+  border-radius:2px 2px;
+  width:100px;
+  border:1px solid #ccc;
+  box-shadow:1px 1px 3px #999; /* ajoute un effet d'ombre */ 
+}
+
+#btt_supp /* bouton supprimer (ne fonctionne pas encore) */ 
+{
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  padding:6px 0 6px 0;
+  font:bold 13px Arial; /* bold : caractère en gras */ ;
+  background:#f5f5f5;
+  color:#555;
+  border-radius:2px 2px;
+  width:100px;
+  border:1px solid #ccc;
+  box-shadow:1px 1px 3px #999;
+} 
+
+
+#titre_question 
+{
+  position: absolute;
+  border-right: none; 
+  border-left:none; 
+  border-top:none; 
+  background-color: #E4EFFF;
+  left: 5px;
+  top: 150px;
+}
+
+#question_0 /* bouton valider question */ 
+{
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  padding:6px 0 6px 0;
+  font:bold 13px Arial; /* bold : caractère en gras */ 
+  background:#f5f5f5; /* couleur de la boite */ 
+  color:#555;
+  border-radius:2px 2px;
+  width:100px;
+  border:1px solid #ccc;
+  box-shadow:1px 1px 3px #999; /* ajoute un effet d'ombre */
+}
+
+#id_reponse /* champ réponse */ 
+{ 
+  position: absolute;
+  border-right: none; 
+  border-left:none; 
+  border-top:none; 
+  left: 5px;
+  background-color: #E4EFFF;
+  bottom: 90px
+}
+
+
+#answer_type /* liste déroulante */ 
+{
+  position: absolute;
+  bottom: 78px;
+  left: 210px;
+  font-family: Poppins, sans-serif; 
+  background-color: white;
+}
+
+
+/* ---------------------------------------------------
+                  5.  PIED DE PAGE
+----------------------------------------------------- */
+
+#box-sizing 
+{
+  position: absolute; 
+  left: 0;
+  bottom: 0; /* tout en bas de la page  */ 
+  -moz-box-sizing: border-box; /* définit la méthode de calcul des dimensions d'un élément */ 
+  box-sizing: border-box; /* on créé une boite pour le pied-de-page */ 
+  position: fixed;
+  background-color:#E4EFFF;
+  width: 100%; 
+  padding:10px;
+  clear: both; /* le pied de page viendra se placer sous les deux floats en scrollant  */ 
+}
+
+/* ---------------------------------------------------
+                   6. MEDIA QUERIES
+----------------------------------------------------- */
+
+@media screen and (max-height: 450px) /* compatbilité avec les plus petits écrans */ 
+{
+  .vertical-menu {padding-top: 15px;}
+  .vertical-menu a {font-size: 18px;}
+}
+
